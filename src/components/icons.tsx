@@ -1,6 +1,10 @@
 import { LaptopIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
-export default function Icons({ icon }: { icon: "light" | "dark" | "system" }) {
+interface IIcons {
+  icon: "light" | "dark" | "system";
+}
+
+export default function Icons({ icon }: IIcons) {
   const triggerIcon = {
     light: <SunIcon className="h-6 w-6" />,
     dark: <MoonIcon className="h-6 w-6" />,
